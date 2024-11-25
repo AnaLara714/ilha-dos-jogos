@@ -18,16 +18,16 @@
     gap:37px;
 }
 
-.section-epic .logo-plataforma {
+.section-epic .logo-plataforma-epic {
     width: 102px;
 }
 
-.section-epic .cards {
+.section-epic .cards-epic {
     display: flex;
     gap: 40px;
 }
 
-.cards .card {
+.cards-epic .card-epic {
     background-color: #fff;
     display: inline-flex;
     flex-direction: column;
@@ -40,24 +40,24 @@
     transition: transform .4s ease-in-out;
 }
 
-.cards .card:hover {
+.cards-epic .card-epic:hover {
     outline: 5px solid #52aef9;
     box-shadow: 0px 0px 25px #52aef9;
     transform: scale(1.05);
 }
 
-.cards .card h3 {
+.cards-epic .card-epic h3 {
     font-size: 22px;
     font-weight: 700;
     text-align: center;
 }
 
-.cards .card img {
+.cards-epic .card-epic img {
     width: 164px;
     margin-top: 25px;
 }
 
-.cards .card p {
+.cards-epic .card-epic p {
     font-size: 16px;
     font-weight: 400;
     width: 100%;
@@ -66,7 +66,7 @@
 } 
 
 
-.cards .card button {
+.cards-epic .card-epic button {
     margin-top: 10px;
     padding: 10px 15px;
     background-color: #bdd9f1;
@@ -75,7 +75,7 @@
     margin-top: 25px;
 }
 
-.cards .card button:hover {
+.cards-epic .card-epic button:hover {
     background-color: #68b4f6;
     cursor: pointer;
 }
