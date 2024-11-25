@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter";
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.section-epic {
+    background-image: linear-gradient(90deg, rgba(16, 18, 28, 1), rgba(4, 3, 6, 1)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 150px;
+    gap:37px;
+}
+
+.section-epic .logo-plataforma {
+    width: 102px;
+}
+
+.section-epic .cards {
+    display: flex;
+    gap: 40px;
+}
+
+.cards .card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    width: 320px;
+    border-radius: 12px;
+}
+
+.cards .card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards .card img {
+    width: 164px;
+    margin-top: 25px;
+}
+
+.cards .card p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+} 
+
+
+.cards .card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #bdd9f1;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
