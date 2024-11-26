@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px;
+  height: 70px;
+  margin: 0;
+}
+
+.logo-header {
+  margin-left: 10%;
+  height: 62px;
+}
+
+.title-header {
+  margin-left: 30%;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .title-header {
+    margin-left: 10%;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 378px) {
+  .title-header {
+    margin-left: 5%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .logo-header {
+    margin-left: 0;
+  }
+}
