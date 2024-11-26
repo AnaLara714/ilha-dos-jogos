@@ -33,7 +33,7 @@ footer p:nth-of-type(2) {
 
 footer p a {
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 footer span {
