@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seções principais */
+.section-playstation, 
+.section-nintendo, 
+.section-xbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 150px;
+    gap: 37px;
+}
+
+/* Cores de fundo */
+.section-playstation {
+    background-color: #0070D1;
+}
+
+.section-nintendo {
+    background-color: #E60012;
+}
+
+.section-xbox {
+    background-color: #107B10;
+}
+
+/* Logos */
+.section-playstation .logo-playstation,
+.section-nintendo .logo-nintendo,
+.section-xbox .logo-xbox {
+    width: 200px;
+}
+
+/* Cards de jogos */
+.cards-jogos {
+    display: flex;
+    gap: 40px;
+}
+
+.card-jogos {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    width: 320px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card-jogos:hover {
+    outline: 5px solid #52aef9;
+    box-shadow: 0px 0px 25px #52aef9;
+    transform: scale(1.05);
+}
+
+/* Títulos dos cards */
+.card-jogos h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Imagens dos cards */
+.card-jogos img {
+    width: 164px;
+    margin-top: 25px;
+}
+
+/* Descrições */
+.card-jogos p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Botões */
+.card-jogos button {
+    margin-top: 25px;
+    padding: 10px 15px;
+    background-color: #bdd9f1;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.card-jogos button:hover {
+    background-color: #68b4f6;
+    cursor: pointer;
+}
