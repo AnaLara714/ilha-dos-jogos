@@ -10,9 +10,7 @@
 /* Seções principais */
 .section-playstation, 
 .section-nintendo, 
-.section-xbox, 
-.section-steam, 
-.section-epic {
+.section-xbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,29 +32,11 @@
     background-color: #107B10;
 }
 
-.section-steam {
-    background-image: linear-gradient(90deg, rgba(30, 52, 83, 1), rgba(16, 18, 28, 1));
-}
-
-.section-epic {
-    background-image: linear-gradient(90deg, rgba(16, 18, 28, 1), rgba(4, 3, 6, 1));
-}
-
 /* Logos */
 .section-playstation .logo-playstation,
 .section-nintendo .logo-nintendo,
-.section-xbox .logo-xbox,
-.section-steam .logo-plataforma-steam,
-.section-epic .logo-plataforma-epic {
+.section-xbox .logo-xbox {
     width: 200px;
-}
-
-.section-steam .logo-plataforma-steam {
-    width: 267px;
-}
-
-.section-epic .logo-plataforma-epic {
-    width: 102px;
 }
 
 /* Cards de jogos */
