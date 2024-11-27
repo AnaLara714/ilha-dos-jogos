@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   flex-direction: row;
@@ -40,6 +39,92 @@
     margin-left: 0;
   }
 }
+
+#welcome,
+.welcome-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.welcome-title {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.welcome-subtitle {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.welcome-banner,
+.game-platforms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-banner {
+  width: 30%;
+}
+
+.game-platforms {
+  margin-top: 5%;
+  column-gap: 40px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  background: #efefef;
+  border-radius: 50%;
+  width: 202px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-icon {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.platform:hover {
+  cursor: pointer;
+  background: #dedede;
+  box-shadow: 0px 4px 10px #343434;
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 25px;
+  }
+
+  .welcome-subtitle {
+    font-size: 18px;
+  }
+
+  .platform {
+    width: 105px;
+    height: 95px;
+  }
+
+  .platform-icon {
+    width: 60px;
+  }
+
+  .game-platforms {
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
