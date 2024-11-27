@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: "Inter";
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -125,15 +135,6 @@
     row-gap: 10px;
   }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-* {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Seções principais */
 .section-playstation, 
 .section-nintendo, 
@@ -143,6 +144,14 @@
     justify-content: center;
     align-items: center;
     padding: 60px 0 150px;
+    gap:37px;
+}
+
+.section-epic .logo-plataforma-epic {
+    width: 102px;
+}
+
+.section-epic .cards-epic {
     gap: 37px;
 }
 
@@ -159,6 +168,10 @@
     background-color: #107B10;
 }
 
+.section-epic {
+  background-image: linear-gradient(90deg, rgba(16, 18, 28, 1), rgba(4, 3, 6, 1)) ;
+ }
+
 /* Logos */
 .section-playstation .logo-playstation,
 .section-nintendo .logo-nintendo,
@@ -172,9 +185,16 @@
     gap: 40px;
 }
 
+
+.cards-epic .card-epic {
+    background-color: #fff;
+    display: inline-flex;
+  }
+  
 .card-jogos {
     background-color: #fff;
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -182,6 +202,10 @@
     width: 320px;
     border-radius: 12px;
     cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+
+.cards-epic .card-epic:hover {
     transition: transform 0.4s ease-in-out;
 }
 
@@ -193,6 +217,7 @@
 
 /* Títulos dos cards */
 .card-jogos h3 {
+
     font-size: 22px;
     font-weight: 700;
     text-align: center;
@@ -204,6 +229,18 @@
     margin-top: 25px;
 }
 
+.cards-epic .card-epic p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+} 
+
+
+.cards-epic .card-epic button {
+    margin-top: 10px;
+  }
 /* Descrições */
 .card-jogos p {
     font-size: 16px;
@@ -219,6 +256,9 @@
     background-color: #bdd9f1;
     border-radius: 8px;
     font-size: 18px;
+}
+
+.cards-epic .card-epic button:hover {
     transition: background-color 0.3s ease;
 }
 
