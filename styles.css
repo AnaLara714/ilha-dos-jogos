@@ -146,11 +146,18 @@
     padding: 60px 0 150px;
     gap:37px;
 }
+  
+.section-steam {
+  background-image: linear-gradient(90deg, rgba(30, 52, 83, 1), rgba(16, 18, 28, 1)) ; }
 
-.section-epic .logo-plataforma-epic {
+.section-steam .logo-plataforma-steam {
+    width: 267px;
+}
+  .section-epic .logo-plataforma-epic {
     width: 102px;
 }
 
+.section-steam .cards-steam,
 .section-epic .cards-epic {
     gap: 37px;
 }
@@ -185,7 +192,7 @@
     gap: 40px;
 }
 
-
+.cards-steam .card-steam, 
 .cards-epic .card-epic {
     background-color: #fff;
     display: inline-flex;
@@ -194,7 +201,6 @@
 .card-jogos {
     background-color: #fff;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -204,6 +210,13 @@
     cursor: pointer;
     transition: transform .4s ease-in-out;
 }
+
+.cards-steam .card-steam:hover {
+    outline: 5px solid #2563eb;
+    box-shadow: 0px 0px 25px #2563eb;
+    transform: scale(1.05);
+}
+
 
 .cards-epic .card-epic:hover {
     transition: transform 0.4s ease-in-out;
@@ -217,12 +230,12 @@
 
 /* Títulos dos cards */
 .card-jogos h3 {
-
     font-size: 22px;
     font-weight: 700;
     text-align: center;
 }
 
+.cards-steam .card-steam img,
 /* Imagens dos cards */
 .card-jogos img {
     width: 164px;
@@ -237,7 +250,7 @@
     margin-top: 20px;
 } 
 
-
+.cards-steam .card-steam button,
 .cards-epic .card-epic button {
     margin-top: 10px;
   }
@@ -251,12 +264,19 @@
 
 /* Botões */
 .card-jogos button {
-    margin-top: 25px;
     padding: 10px 15px;
     background-color: #bdd9f1;
     border-radius: 8px;
     font-size: 18px;
+    margin-top: 25px;
+    transition: background .4s;
 }
+
+.cards-steam .card-steam button:hover {
+    background-color: #68b4f6;
+    cursor: pointer;
+}
+
 
 .cards-epic .card-epic button:hover {
     transition: background-color 0.3s ease;
