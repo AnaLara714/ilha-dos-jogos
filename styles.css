@@ -86,9 +86,7 @@
 }
 
 /* Botões */
-.card-jogos button, 
-.card-steam button, 
-.card-epic button {
+.card-jogos button {
     margin-top: 25px;
     padding: 10px 15px;
     background-color: #bdd9f1;
