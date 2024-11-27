@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
     font-family: "Inter";
@@ -7,15 +8,154 @@
     box-sizing: border-box;
 }
 
-footer {
-    padding: 35px 0 ;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px;
+  height: 70px;
+  margin: 0;
+}
+
+.logo-header {
+  margin-left: 10%;
+  height: 62px;
+}
+
+.title-header {
+  margin-left: 30%;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .title-header {
+    margin-left: 10%;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 378px) {
+  .title-header {
+    margin-left: 5%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .logo-header {
+    margin-left: 0;
+  }
+}
+
+#welcome,
+.welcome-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.welcome-title {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.welcome-subtitle {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.welcome-banner,
+.game-platforms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-banner {
+  width: 30%;
+}
+
+.game-platforms {
+  margin-top: 5%;
+  column-gap: 40px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  background: #efefef;
+  border-radius: 50%;
+  width: 202px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-icon {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.platform:hover {
+  cursor: pointer;
+  background: #dedede;
+  box-shadow: 0px 4px 10px #343434;
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 25px;
+  }
+
+  .welcome-subtitle {
+    font-size: 18px;
+  }
+
+  .platform {
+    width: 105px;
+    height: 95px;
+  }
+
+  .platform-icon {
+    width: 60px;
+  }
+
+  .game-platforms {
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+
+/* Seções principais */
+.section-playstation, 
+.section-nintendo, 
+.section-xbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    padding: 60px 0 150px;
+    gap:37px;
 }
 
+ footer {
+   padding: 35px 0 ;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 15px;
+  }
+  
 footer h3 {
     font-size: 24px;
     font-weight: 700;
@@ -38,4 +178,143 @@ footer p a {
 
 footer span {
     font-size: 22px;
+} 
+  
+.section-steam {
+  background-image: linear-gradient(90deg, rgba(30, 52, 83, 1), rgba(16, 18, 28, 1)) ; }
+
+.section-steam .logo-plataforma-steam {
+    width: 267px;
+}
+  .section-epic .logo-plataforma-epic {
+    width: 102px;
+}
+
+.section-steam .cards-steam,
+.section-epic .cards-epic {
+    gap: 37px;
+}
+
+/* Cores de fundo */
+.section-playstation {
+    background-color: #0070D1;
+}
+
+.section-nintendo {
+    background-color: #E60012;
+}
+
+.section-xbox {
+    background-color: #107B10;
+}
+
+.section-epic {
+  background-image: linear-gradient(90deg, rgba(16, 18, 28, 1), rgba(4, 3, 6, 1)) ;
+ }
+
+/* Logos */
+.section-playstation .logo-playstation,
+.section-nintendo .logo-nintendo,
+.section-xbox .logo-xbox {
+    width: 200px;
+}
+
+/* Cards de jogos */
+.cards-jogos {
+    display: flex;
+    gap: 40px;
+}
+
+.cards-steam .card-steam, 
+.cards-epic .card-epic {
+    background-color: #fff;
+    display: inline-flex;
+  }
+  
+.card-jogos {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    width: 320px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+
+.cards-steam .card-steam:hover {
+    outline: 5px solid #2563eb;
+    box-shadow: 0px 0px 25px #2563eb;
+    transform: scale(1.05);
+}
+
+
+.cards-epic .card-epic:hover {
+    transition: transform 0.4s ease-in-out;
+}
+
+.card-jogos:hover {
+    outline: 5px solid #52aef9;
+    box-shadow: 0px 0px 25px #52aef9;
+    transform: scale(1.05);
+}
+
+/* Títulos dos cards */
+.card-jogos h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards-steam .card-steam img,
+/* Imagens dos cards */
+.card-jogos img {
+    width: 164px;
+    margin-top: 25px;
+}
+
+.cards-epic .card-epic p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+} 
+
+.cards-steam .card-steam button,
+.cards-epic .card-epic button {
+    margin-top: 10px;
+  }
+/* Descrições */
+.card-jogos p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Botões */
+.card-jogos button {
+    padding: 10px 15px;
+    background-color: #bdd9f1;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 25px;
+    transition: background .4s;
+}
+
+.cards-steam .card-steam button:hover {
+    background-color: #68b4f6;
+    cursor: pointer;
+}
+
+.cards-epic .card-epic button:hover {
+    transition: background-color 0.3s ease;
+}
+
+.card-jogos button:hover {
+    background-color: #68b4f6;
+    cursor: pointer;
 }
