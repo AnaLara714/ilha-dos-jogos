@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 HTML {
-    scroll-behavior: smooth;
-    scroll-padding-bottom: 200px;
+  scroll-behavior: smooth;
+  scroll-padding-bottom: 200px;
 }
 
 * {
@@ -86,74 +86,79 @@ HTML {
 }
 
 .banner-item {
-    position: relative;
-    width: 30%;
-    overflow: hidden;
+  position: relative;
+  width: 30%;
+  overflow: hidden;
 }
 
 .banner-item:nth-of-type(1) {
-    border-top-left-radius: 28px;
-    border-bottom-left-radius: 28px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
 }
 
 .banner-item:nth-of-type(3) {
-    border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
 }
 
 .img-banner {
   width: 100%;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .banner-item:hover .img-banner {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: default;
 }
 
 .overlay .title {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 12px;
-    text-align: center; 
-    padding: 0 5px;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 12px;
+  text-align: center;
+  padding: 0 5px;
 }
 
 .overlay .desc {
-    color: #fff;
-    font-size: 16px;
-    width: 70%;
-    text-align: center;
-    font-weight: 400;
-
+  color: #fff;
+  font-size: 16px;
+  width: 70%;
+  text-align: center;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
-    .overlay .title {font-size: 20px;}
-    .overlay .desc {font-size: 14px;}
+  .overlay .title {
+    font-size: 20px;
+  }
+  .overlay .desc {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
-    .overlay .desc {display: none;}
+  .overlay .desc {
+    display: none;
+  }
 }
 
 .banner-item:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .game-platforms {
@@ -200,8 +205,8 @@ HTML {
 }
 
 .platform:nth-child(4):hover {
-  box-shadow: 0px 4px 10px rgb(1, 36, 11);
-  background: rgba(30, 52, 83, 0.618);
+  box-shadow: 0px 4px 10px rgb(0, 4, 1);
+  background: rgba(2, 55, 125, 0.509);
 }
 
 @media (max-width: 768px) {
