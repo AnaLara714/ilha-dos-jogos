@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+HTML {
+    scroll-behavior: smooth;
+    scroll-padding-bottom: 200px;
+}
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -80,8 +85,84 @@
   justify-content: center;
 }
 
+.banner-item {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+
+.banner-item:nth-of-type(1) {
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+
+.banner-item:nth-of-type(3) {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
 .img-banner {
-  width: 30%;
+  width: 100%;
+  transition: .4s ease-in-out;
+}
+
+.banner-item:hover .img-banner {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay .title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-overlay {
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 25px;
+    transition: background 0.4s;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-overlay a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-overlay:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.btn-overlay#playstation{background-color: #0070D1;}
+.btn-overlay#playstation:hover{background-color: #0464BA;}
+
+.btn-overlay#xbox {background-color: #107B10;}
+.btn-overlay#xbox:hover {background-color: #0D690F;}
+
+.btn-overlay#nintendo {background-color: #E60012;}
+.btn-overlay#nintendo:hover {background-color: #BD0310;}
+
+.banner-item:hover .overlay {
+    opacity: 1;
 }
 
 .game-platforms {
@@ -290,9 +371,6 @@
 
 .card-jogos button:hover {
   transition: background-color 0.3s ease;
-}
-
-.card-jogos button:hover {
   background-color: #68b4f6;
   cursor: pointer;
 }
