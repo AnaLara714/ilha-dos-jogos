@@ -55,6 +55,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2%;
 }
 
 .welcome-title {
@@ -134,17 +135,145 @@
   }
 }
 
-.section-playstation,
-.section-nintendo,
-.section-xbox,
-.section-epic,
-.section-steam {
+#section-playstation,
+#section-nintendo,
+#section-xbox,
+#section-epic,
+#section-steam {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 60px 0 150px;
   gap: 37px;
+}
+
+#section-playstation {
+  margin-top: 5%;
+  background-image: linear-gradient(90deg, #0070d1, 70%, rgb(29, 32, 50));
+}
+
+#section-nintendo {
+  background-image: linear-gradient(90deg, #e60012, 70%, rgb(54, 9, 9));
+}
+
+#section-xbox {
+  background-image: linear-gradient(90deg, #107b10, 70%, rgb(1, 36, 11));
+}
+
+#section-steam {
+  background-image: linear-gradient(
+    90deg,
+    rgba(30, 52, 83, 1),
+    70%,
+    rgba(16, 18, 28, 1)
+  );
+}
+
+#section-epic {
+  background-image: linear-gradient(
+    90deg,
+    rgb(33, 34, 35),
+    70%,
+    rgba(4, 3, 6, 1)
+  );
+}
+
+.cards-jogos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.card-jogos {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px;
+  width: 320px;
+  height: 471px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+.cards-epic .card-epic:hover {
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-jogos:hover {
+  transform: scale(1.05);
+}
+
+#section-playstation .card-jogos:hover {
+  outline: 5px solid #0c3fc0;
+  box-shadow: 0px 0px 25px #1f8ae1;
+}
+
+#section-nintendo .card-jogos:hover {
+  outline: 5px solid #ff3838;
+  box-shadow: 0px 0px 25px #980505;
+}
+
+#section-xbox .card-jogos:hover {
+  outline: 5px solid #09b91b;
+  box-shadow: 0px 0px 25px #09dd1e;
+}
+
+#section-steam .card-jogos:hover {
+  outline: 5px solid #4a96e2;
+  box-shadow: 0px 0px 25px #2b8ff3;
+}
+
+#section-epic .card-jogos:hover {
+  outline: 5px solid #1e2124;
+  box-shadow: 0px 0px 25px #7a7a7b;
+}
+
+.card-jogos h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-jogos img {
+  width: 164px;
+  height: 220px;
+  margin-top: 25px;
+}
+
+.cards-jogos .card-jogos button {
+  margin-top: 10px;
+}
+
+.card-jogos p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card-jogos button {
+  padding: 10px 15px;
+  background-color: #bdd9f1;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 25px;
+  transition: background 0.4s;
+}
+
+.card-jogos button:hover {
+  transition: background-color 0.3s ease;
+}
+
+.card-jogos button:hover {
+  background-color: #68b4f6;
+  cursor: pointer;
 }
 
 footer {
@@ -156,165 +285,18 @@ footer {
   gap: 15px;
 }
 
-.section-steam {
-  background-image: linear-gradient(
-    90deg,
-    rgba(30, 52, 83, 1),
-    rgba(16, 18, 28, 1)
-  );
-}
-
-.section-steam .logo-plataforma-steam {
-  width: 267px;
-}
-.section-epic .logo-plataforma-epic {
-  width: 102px;
-}
-
-.section-steam .cards-steam,
-.section-epic .cards-epic {
-  gap: 37px;
-}
-
-/* Cores de fundo */
-.section-playstation {
-  background-color: #0070d1;
-}
-
-.section-nintendo {
-  background-color: #e60012;
-}
-
-.section-xbox {
-  background-color: #107b10;
-}
-
-.section-epic {
-  background-image: linear-gradient(
-    90deg,
-    rgba(16, 18, 28, 1),
-    rgba(4, 3, 6, 1)
-  );
-}
-
-/* Logos */
-.section-playstation .logo-playstation,
-.section-nintendo .logo-nintendo,
-.section-xbox .logo-xbox {
-  width: 200px;
-}
-
-/* Cards de jogos */
-.cards-jogos {
-  display: flex;
-  gap: 40px;
-}
-
-.cards-steam .card-steam,
-.cards-epic .card-epic {
-  background-color: #fff;
-  display: inline-flex;
-}
-
-.card-jogos {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 28px;
-  width: 320px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.4s ease-in-out;
-}
-
-.cards-steam .card-steam:hover {
-  outline: 5px solid #2563eb;
-  box-shadow: 0px 0px 25px #2563eb;
-  transform: scale(1.05);
-}
-
-.cards-epic .card-epic:hover {
-  transition: transform 0.4s ease-in-out;
-}
-
-.card-jogos:hover {
-  outline: 5px solid #52aef9;
-  box-shadow: 0px 0px 25px #52aef9;
-  transform: scale(1.05);
-}
-
-/* Títulos dos cards */
-.card-jogos h3 {
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.cards-steam .card-steam img,
-/* Imagens dos cards */
-.card-jogos img {
-  width: 164px;
-  margin-top: 25px;
-}
-
-.cards-epic .card-epic p {
-  font-size: 16px;
-  font-weight: 400;
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.cards-steam .card-steam button,
-.cards-epic .card-epic button {
-  margin-top: 10px;
-}
-/* Descrições */
-.card-jogos p {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Botões */
-.card-jogos button {
-  padding: 10px 15px;
-  background-color: #bdd9f1;
-  border-radius: 8px;
-  font-size: 18px;
-  margin-top: 25px;
-  transition: background 0.4s;
-}
-
-.cards-steam .card-steam button:hover {
-  background-color: #68b4f6;
-  cursor: pointer;
-}
-
-.cards-epic .card-epic button:hover {
-  transition: background-color 0.3s ease;
-}
-
-.card-jogos button:hover {
-  background-color: #68b4f6;
-  cursor: pointer;
-}
-
 footer h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 footer p:nth-of-type(1) {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 footer p:nth-of-type(2) {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -324,5 +306,5 @@ footer p a {
 }
 
 footer span {
-  font-size: 22px;
+  font-size: 20px;
 }
