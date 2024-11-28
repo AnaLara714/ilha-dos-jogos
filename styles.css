@@ -123,6 +123,7 @@ HTML {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    cursor: default;
 }
 
 .overlay .title {
@@ -138,7 +139,8 @@ HTML {
     font-size: 16px;
     width: 70%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
+
 }
 
 @media (max-width: 768px) {
