@@ -55,7 +55,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2%;
 }
 
 .welcome-title {
@@ -63,6 +62,7 @@
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  padding-top: 5%;
 }
 
 .welcome-subtitle {
@@ -70,6 +70,7 @@
   margin-top: 8px;
   font-weight: 400;
   font-size: 20px;
+  padding-bottom: 2%;
 }
 
 .welcome-banner,
@@ -109,6 +110,26 @@
   cursor: pointer;
   background: #dedede;
   box-shadow: 0px 4px 10px #343434;
+}
+
+.platform:nth-child(1):hover {
+  box-shadow: 0px 4px 10px rgba(29, 32, 50, 0.551);
+  background: #0070d187;
+}
+
+.platform:nth-child(2):hover {
+  box-shadow: 0px 4px 10px rgb(54, 9, 9);
+  background: #e600137b;
+}
+
+.platform:nth-child(3):hover {
+  box-shadow: 0px 4px 10px rgb(1, 36, 11);
+  background: #107b1073;
+}
+
+.platform:nth-child(4):hover {
+  box-shadow: 0px 4px 10px rgb(1, 36, 11);
+  background: rgba(30, 52, 83, 0.618);
 }
 
 @media (max-width: 768px) {
@@ -216,7 +237,7 @@
 
 #section-nintendo .card-jogos:hover {
   outline: 5px solid #ff3838;
-  box-shadow: 0px 0px 25px #980505;
+  box-shadow: 0px 0px 25px #e50000;
 }
 
 #section-xbox .card-jogos:hover {
@@ -306,5 +327,5 @@ footer p a {
 }
 
 footer span {
-  font-size: 20px;
+  font-size: 20gpx;
 }
