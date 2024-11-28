@@ -127,39 +127,28 @@ HTML {
 
 .overlay .title {
     color: white;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 25px;
+    margin-bottom: 12px;
+    text-align: center; 
+    padding: 0 5px;
 }
 
-.btn-overlay {
-    padding: 10px 15px;
+.overlay .desc {
     color: #fff;
-    border-radius: 8px;
-    font-size: 15px;
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
     font-weight: 500;
-    margin-top: 25px;
-    transition: background 0.4s;
-    transition: all 0.3s ease-in-out;
 }
 
-.btn-overlay a {
-    color: #fff;
-    text-decoration: none;
+@media (max-width: 768px) {
+    .overlay .title {font-size: 20px;}
+    .overlay .desc {font-size: 14px;}
 }
 
-.btn-overlay:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+@media (max-width: 768px) {
+    .overlay .desc {display: none;}
 }
-
-.btn-overlay#playstation{background-color: #0070D1;}
-.btn-overlay#playstation:hover{background-color: #0464BA;}
-
-.btn-overlay#xbox {background-color: #107B10;}
-.btn-overlay#xbox:hover {background-color: #0D690F;}
-
-.btn-overlay#nintendo {background-color: #E60012;}
-.btn-overlay#nintendo:hover {background-color: #BD0310;}
 
 .banner-item:hover .overlay {
     opacity: 1;
