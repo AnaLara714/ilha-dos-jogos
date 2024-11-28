@@ -306,6 +306,11 @@ footer {
   gap: 15px;
 }
 
+.link-jogo {
+  color: #000;
+  text-decoration: none;
+}
+
 footer h3 {
   font-size: 22px;
   font-weight: 700;
